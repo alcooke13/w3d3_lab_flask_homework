@@ -1,15 +1,22 @@
 <html>
     <head>
         <title>{{ title }} - List of Orders</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     </head>
     <body>
         <h1>List of Orders</h1>
         {% for order in list_of_orders %}
         <div>
-            <p>
-                <a href="/orders/{{list_of_orders.index(order)}}"><b>{{ order.customer_name }}:</b></a> {{ order.quantity }} {{ order.pizza_name }} <b>Extra topping:</b> {{ order.extra_toppings}} {{ order.order_date}}
+            <p>{{ order.order_date }}<br>
+                <a href="/orders/{{list_of_orders.index(order)}}">{{ order.customer_name }}:</a> {{ order.quantity }} {{ order.pizza_name }} <br>Extra topping: {{ order.extra_toppings}} 
             </p>
+                
         </div>
         {% endfor %}
+        <footer>
+            <section>
+                <h2>Super Fake Pizza Shop</h2>
+            </section>
+        </footer>    
     </body>
 </html>

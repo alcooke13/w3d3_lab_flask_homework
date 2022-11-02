@@ -1,0 +1,36 @@
+body {
+    outline: red solid 2px;
+    background-color: orange;
+    display: grid;
+    margin: 0;
+}
+
+body > h1 {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    font-style: italic;
+}
+
+p {
+    color: black;
+    outline: black solid 5px;
+    text-align: center;
+    background-color: #fff;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    
+}
+
+footer {
+    text-align:center;
+    background-color: black;
+    color: #fff;
+    margin-bottom: 30px;
+}

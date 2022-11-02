@@ -8,7 +8,7 @@ class Order():
         self.customer_name = customer_name
         self.quantity = quantity
         self.pizza_name = pizza_name
-        self.order_date = now.strftime("%H: %M: %S")
+        self.order_date = now.strftime("%H:%M//%d-%m-%Y")
         self.extra_toppings = extra_toppings
         
         
